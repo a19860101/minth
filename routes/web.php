@@ -14,9 +14,35 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
-
+Route::get('/product',function(){
+    return view('product.index');
+});
+Route::get('/product/show',function(){
+    return view('product.show');
+});
+Route::get('/equipment',function(){
+    return view('equipment.index');
+});
+Route::get('/equipment/{id}',function(){
+    return view('equipment.show');
+});
+Route::get('/certified',function(){
+    return view('certified');
+});
+Route::get('/history',function(){
+    return view('page.history');
+});
+Route::get('/philosophy',function(){
+    return view('page.philosophy');
+});
+Route::get('/join-us',function(){
+    return view('page.join');
+});
+Route::get('/contact',function(){
+    return view('page.contact');
+});
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
