@@ -1,9 +1,15 @@
 @extends('template.master')
 @section('css')
-
+<style>
+    section.main {
+        background-image: 
+            linear-gradient(to right top,rgba(255, 195, 235, 0.9),rgba(196, 229, 255, 0.9)),
+            url('/images/ph.jpg')
+    }
+</style>
 @endsection
 @section('main')
-<section class="relative h-full bg-center bg-no-repeat bg-cover" style="background-image:url('/images/bg.png')">
+<section class="main relative h-full bg-center bg-no-repeat bg-cover">
     <div class="h-fit max-w-screen-xl w-11/12 absolute inset-0 m-auto p-12">
         <h2 class="text-2xl text-center w-full top-0 left-0 text-[#013565] mb-10">經營理念</h2>
         <div class="text-center space-y-6 mb-12 text-xl">

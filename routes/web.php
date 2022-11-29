@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,9 +19,7 @@ Route::get('/', function () {
 Route::get('/product',function(){
     return view('product.index');
 });
-Route::get('/product/show',function(){
-    return view('product.show');
-});
+Route::get('/product/{id}',[PageController::class,'product_show']);
 Route::get('/equipment',function(){
     return view('equipment.index');
 });
@@ -42,6 +40,12 @@ Route::get('/join-us',function(){
 });
 Route::get('/contact',function(){
     return view('page.contact');
+});
+Route::get('/news',function(){
+    return view('posts.index');
+});
+Route::get('/links',function(){
+    return view('posts.links');
 });
 Route::get('/dashboard', function () {
     return view('dashboard');

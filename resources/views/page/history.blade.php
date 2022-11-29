@@ -32,10 +32,14 @@
     .right {
         left: 100%;
     }
+    section.main {
+        background-image: 
+            linear-gradient(to right top,rgba(255, 195, 235, 0.5),rgba(196, 229, 255, 0.5));
+    }
 </style>
 @endsection
 @section('main')
-<section class="relative h-full bg-center bg-no-repeat bg-cover" style="background-image:url('/images/bg.png')">
+<section class="main relative h-full bg-center bg-no-repeat bg-cover">
     <div class="flex items-start h-fit max-w-screen-xl w-11/12 absolute inset-0 m-auto p-24">
         <h2 class="text-2xl absolute text-center w-full top-0 left-0 text-[#013565]">公司沿革</h2>
         <div class="tl relative w-full">

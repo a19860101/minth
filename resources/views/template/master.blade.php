@@ -24,12 +24,12 @@
             <div class="mb-auto w-full text-center">
                 <div class="hover:bg-white/50 py-3 transition duration-500"><a href="#">產品介紹</a><i class="fa-solid fa-chevron-right pl-3 toggle transition"></i></div>
                 <ul class="pl-2 hidden">
-                    <li class="py-3"><a href="#" class="text-[#686868] hover:text-[#075ba8]">外水切</a></li>
-                    <li class="py-3"><a href="#" class="text-[#686868] hover:text-[#075ba8]">內水切</a></li>
-                    <li class="py-3"><a href="#" class="text-[#686868] hover:text-[#075ba8]">前檔飾條</a></li>
-                    <li class="py-3"><a href="#" class="text-[#686868] hover:text-[#075ba8]">後檔飾條</a></li>
-                    <li class="py-3"><a href="#" class="text-[#686868] hover:text-[#075ba8]">車頂飾條</a></li>
-                    <li class="py-3"><a href="#" class="text-[#686868] hover:text-[#075ba8]">車身飾條</a></li>
+                    @php
+                        $products = \App\Models\Product::get();
+                    @endphp
+                    @foreach($products as $p)
+                    <li class="py-3"><a href="/product/{{$p->id}}" class="text-[#686868] hover:text-[#075ba8]">{{$p->title}}</a></li>
+                    @endforeach
                 </ul>
                 <div class="hover:bg-white/50 py-3 transition duration-500"><a href="#">設備說明</a><i class="fa-solid fa-chevron-right pl-3 toggle transition"></i></div>
                 <ul class="pl-2 hidden">
@@ -39,9 +39,9 @@
                 <div class="hover:bg-white/50 py-3 transition duration-500"><a href="/certified" class="pr-5">相關認證</a></div>
                 <div class="hover:bg-white/50 py-3 transition duration-500"><a href="#">最新消息</a><i class="fa-solid fa-chevron-right pl-3 toggle transition"></i></div>
                 <ul class="pl-2 hidden">
-                    <li class="py-3"><a href="#" class="text-[#686868] hover:text-[#075ba8]">消息列表</a></li>
-                    <li class="py-3"><a href="#" class="text-[#686868] hover:text-[#075ba8]">消息本文</a></li>
-                    <li class="py-3"><a href="#" class="text-[#686868] hover:text-[#075ba8]">相關連結</a></li>
+                    <li class="py-3"><a href="/news" class="text-[#686868] hover:text-[#075ba8]">消息列表</a></li>
+                    {{-- <li class="py-3"><a href="#" class="text-[#686868] hover:text-[#075ba8]">消息本文</a></li> --}}
+                    <li class="py-3"><a href="/links" class="text-[#686868] hover:text-[#075ba8]">相關連結</a></li>
                 </ul>
                 <div class="hover:bg-white/50 py-3 transition duration-500"><a href="#">公司簡介</a><i class="fa-solid fa-chevron-right pl-3 toggle transition"></i></div>
                 <ul class="pl-2 hidden">
