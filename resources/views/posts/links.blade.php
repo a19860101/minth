@@ -5,7 +5,7 @@
         <img src="/images/links.jpg" alt="" class="w-full h-full object-cover">
     </div>
     <div>
-        <h1 class="text-2xl text-[#013565] text-center py-8">相關連結</h1>
+        <h1 class="text-2xl text-[#013565] text-center py-8">{{__('links')}}</h1>
     </div>
 </section>
 @endsection

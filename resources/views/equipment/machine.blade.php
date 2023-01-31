@@ -35,25 +35,6 @@
                 <li>Pressing machine</li>
             </ul>
         </div>
-        <div>
-
-            <ul>
-                <h3 class="text-3xl font-bold mb-4">Test Equipment</h3>
-
-                <li>Multi-function test machine</li>
-                <li>High-temperature Tester</li>
-                <li>Environmental Humidity & Temperature Chamber</li>
-                <li>Low-temperature Tester</li>
-                <li>Friction facility</li>
-                <li>Impact facility</li>
-                <li>Fall ball test machine</li>
-                <li>HV & HSD Hardness Tester</li>
-                <li>Rubber & Plastic Specific Gravimeter</li>
-                <li>Salt Spray Chamber</li>
-                <li>MI tester</li>
-                <li>Gloss Meters</li>
-            </ul>
-        </div>
             
         {{-- <div class="slider w-full">
             <div class="mx-2">
@@ -91,7 +72,7 @@
 </section>
 @endsection
 @section('js')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
     $(function(){
         $('.slider').slick({
@@ -101,5 +82,5 @@
             infinite: false
         })
     })
-</script>
+</script> --}}
 @endsection

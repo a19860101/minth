@@ -80,6 +80,7 @@ return [
     |
     */
 
+    // 'locale' => 'zh_TW',
     'locale' => 'en',
 
     /*

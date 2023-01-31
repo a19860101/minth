@@ -15,11 +15,11 @@
             <img src="/images/{{$product->cover}}" alt="" class="block img-shadow w-full h-full object-cover">
         </div>
         <div class="w-[400px] text-center">
-            <h3 class="text-3xl mb-6">{{$product->title}}</h3>
-            <div class="mb-5">應用車型</div>
+            <h3 class="text-3xl mb-6">{{$product->title_en}}</h3>
+            <div class="mb-5">{{__('car_model')}}</div>
             <ul class="list-disc list-inside">
                 @php
-                    $car = explode(',',$product->car);
+                    $car = explode(',',$product->car_en);
                 @endphp
                 @foreach($car as $c)
                 <li>{{$c}}</li>

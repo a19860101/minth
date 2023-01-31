@@ -23,8 +23,14 @@ Route::get('/product/{id}',[PageController::class,'product_show']);
 Route::get('/equipment',function(){
     return view('equipment.index');
 });
-Route::get('/equipment/{id}',function(){
-    return view('equipment.show');
+// Route::get('/equipment/{id}',function(){
+//     return view('equipment.show');
+// });
+Route::get('/equipment/test',function(){
+    return view('equipment.test');
+});
+Route::get('/equipment/machine',function(){
+    return view('equipment.machine');
 });
 Route::get('/certified',function(){
     return view('certified');

@@ -14,27 +14,7 @@
 <section class="relative h-full bg-center bg-no-repeat bg-cover" style="background-image:url('/images/bg-2.png')">
     <div class="bg-white/50 border border-[#3175B2] rounded-[66px] flex justify-around items-start h-fit max-w-screen-xl w-11/12 absolute inset-0 m-auto px-20 py-32 shadow-md shadow-[#BFD7ED]">
         {{-- <h2 class="text-2xl absolute text-center w-full top-[-100px] left-0 text-[#013565]">設備介紹</h2> --}}
-        <div>
-            <h3 class="text-3xl font-bold mb-4">Machine Equipment</h3>
-            <ul>
-                
-                <li>PVC compounding machine</li>
-                
-                <li>Metal rolling machine</li>
-                
-                <li>Extrusion machine</li>
-                
-                <li>Injection machine</li>
-                
-                <li>Welding machine</li>
-                
-                <li>Bending machine</li>
-                
-                <li>Sawing machine</li>
-                
-                <li>Pressing machine</li>
-            </ul>
-        </div>
+
         <div>
 
             <ul>
@@ -91,7 +71,7 @@
 </section>
 @endsection
 @section('js')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
     $(function(){
         $('.slider').slick({
@@ -101,5 +81,5 @@
             infinite: false
         })
     })
-</script>
+</script> --}}
 @endsection

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
+use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -45,6 +46,10 @@ class Equipment extends Resource
         return [
             ID::make()->sortable(),
             Text::make('設備名稱','title'),
+            Select::make('設備分類','title')->options([
+                'test' => '測試設備',
+                'machine' => '製造設備'
+            ]),
             Text::make('設備圖片','cover'),
             Trix::make('設備說明','body'),
             Text::make('排序','sort')

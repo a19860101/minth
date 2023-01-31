@@ -44,9 +44,13 @@ class Product extends Resource
         return [
             ID::make()->sortable(),
             Text::make('商品名稱','title'),
+            Text::make('Title(en)','title_en'),
             Image::make('商品圖片','cover'),
+            Image::make('Cover(en)','cover_en'),
             Text::make('應用車型','car'),
-            Text::make('排序','sort')
+            Text::make('Car(en)','car_en'),
+            Text::make('排序','sort'),
+            Text::make('Sort(en)','sort_en')
         ];
     }
 
