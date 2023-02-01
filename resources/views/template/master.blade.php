@@ -72,7 +72,13 @@
             })
             let h = $('body').outerHeight();
             $('nav').css('height',h)
+        
+            // let url = new URL(window.location.href);
+            // console.log(url.pathname.includes('product'));
+            // let pathname = url.pathname;
+        
         })
+
     </script>
     @yield('js')
 </body>
