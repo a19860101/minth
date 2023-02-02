@@ -3,8 +3,8 @@
 
 @endsection
 @section('main')
-<section class="relative h-full bg-center bg-no-repeat bg-cover flex flex-col pt-12" style="background-image:url('/images/bg.png')">
-    <div class="bg-white/50 border border-[#3175B2] rounded-xl h-fit max-w-screen-md w-1/2 p-10 mx-auto mb-10">
+<section class="relative min-h-screen bg-center bg-no-repeat bg-cover main flex flex-col" style="background-image:url('/images/bg.png')">
+    <div class="bg-white/50 border border-[#3175B2] rounded-xl h-fit max-w-screen-md w-1/2 p-10 mx-auto mb-10 mt-16">
         <h2 class="text-2xl text-center w-full top-0 left-0 text-[#013565] mb-4">{{__('contact')}}</h2>
         <form action="">
             <div class="flex items-center mb-4">
@@ -54,7 +54,7 @@
             </div>
         </form>
     </div>
-    <div class="text-center py-8 text-sm bg-white mt-auto">
+    <div class="text-center text-sm bg-white mt-auto py-10 relative bottom-[56px]">
         <div class="mb-4"><span class="text-[#3175B2]">Company</span> 7F., No. 53, Sec. 1, Nanchang Rd., Zhongzheng Dist., Taipei City  , Taiwan (R.O.C.) </div>
         <div  class="mb-4"><span class="text-[#3175B2]">Factory</span> No. 5, Haiping Rd., Guishan Dist., Taoyuan City , Taiwan (R.O.C.)   </div>
         <div><span class="text-[#3175B2]">Phone</span> 886-3-3298671   <span class="text-[#3175B2]">Fax</span> 886-3-3295839 </div>

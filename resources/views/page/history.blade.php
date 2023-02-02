@@ -39,10 +39,15 @@
 </style>
 @endsection
 @section('main')
-<section class="main relative h-full bg-center bg-no-repeat bg-cover">
-    <div class="flex items-start h-fit max-w-screen-xl w-11/12 absolute inset-0 m-auto p-24">
-        <h2 class="text-2xl absolute text-center w-full top-0 left-0 text-[#013565]">公司沿革</h2>
-        <div class="tl relative w-full">
+
+<section class="main relative min-h-screen bg-center bg-no-repeat bg-cover">
+    <div class="w-full h-[200px] relative">
+        <img src="/images/news.jpg" alt="" class="w-full h-full object-cover">
+        <h1 class="text-2xl text-white text-center absolute m-auto inset-0 w-full h-full bg-black/50 leading-[200px]">公司沿革</h1>
+    </div>
+    <div class="flex py-12 pb-20">
+        {{-- <h2 class="text-2xl absolute text-center w-full top-0 left-0 text-[#013565]">公司沿革</h2> --}}
+        <div class="tl relative w-[1000px] mx-auto">
             <div class="tl-item w-1/2 text-center pb-8">
                 <div class="tl-content relative px-16 left">
                     <h4 class="text-xl">1991 / 09</h4>

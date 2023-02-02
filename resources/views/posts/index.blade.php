@@ -1,11 +1,9 @@
 @extends('template.master')
 @section('main')
 <section>
-    <div class="w-full h-[300px]">
+    <div class="w-full h-[200px] relative">
         <img src="/images/news.jpg" alt="" class="w-full h-full object-cover">
-    </div>
-    <div>
-        <h1 class="text-2xl text-[#013565] text-center py-8">{{__('news')}}</h1>
+        <h1 class="text-2xl text-white text-center absolute m-auto inset-0 w-full h-full bg-black/50 leading-[200px]">{{__('news')}}</h1>
     </div>
 </section>
 @endsection

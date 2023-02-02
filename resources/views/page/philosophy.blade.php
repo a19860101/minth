@@ -9,9 +9,12 @@
 </style>
 @endsection
 @section('main')
-<section class="main relative h-full bg-center bg-no-repeat bg-cover">
-    <div class="h-fit max-w-screen-xl w-11/12 absolute inset-0 m-auto p-12">
-        <h2 class="text-2xl text-center w-full top-0 left-0 text-[#013565] mb-10">{{__('philosophy')}}</h2>
+<section class="relative min-h-screen bg-center bg-no-repeat bg-cover main">
+    <div class="w-full h-[200px] relative">
+        <img src="/images/news.jpg" alt="" class="w-full h-full object-cover">
+        <h1 class="text-2xl text-white text-center absolute m-auto inset-0 w-full h-full bg-black/50 leading-[200px]">{{__('philosophy')}}</h1>
+    </div>
+    <div class="p-20">
         {{-- <div class="text-center space-y-6 mb-12 text-xl">
             <div>顧客滿意</div>
             <div>員工滿意</div>

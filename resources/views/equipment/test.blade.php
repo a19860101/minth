@@ -11,7 +11,7 @@
 </style>
 @endsection
 @section('main')
-<section class="relative h-full bg-center bg-no-repeat bg-cover" style="background-image:url('/images/bg-2.png')">
+<section class="relative min-h-screen bg-center bg-no-repeat bg-cover main" style="background-image:url('/images/bg-2.png')">
     <div class="bg-white/50 border border-[#3175B2] rounded-[66px] flex justify-around items-start h-fit max-w-screen-xl w-11/12 absolute inset-0 m-auto px-20 py-32 shadow-md shadow-[#BFD7ED]">
         {{-- <h2 class="text-2xl absolute text-center w-full top-[-100px] left-0 text-[#013565]">設備介紹</h2> --}}
 

@@ -22,5 +22,6 @@
     "email":"Email",
     "opnion":"Opnion",
     "test_equipment":"Test Equipment",
-    "machine_equipment":"Machine Equipment"
+    "machine_equipment":"Machine Equipment",
+    "feature_equipment":"Feature Equipment"
 }
