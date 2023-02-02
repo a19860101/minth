@@ -6,24 +6,23 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Image;
-use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Product extends Resource
+class Brand extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
-     * @var class-string<\App\Models\Product>
+     * @var class-string<\App\Models\Brand>
      */
-    public static $model = \App\Models\Product::class;
+    public static $model = \App\Models\Brand::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'title';
 
     /**
      * The columns that should be searched.
@@ -44,16 +43,9 @@ class Product extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('商品名稱','title'),
-            Text::make('Title(en)','title_en'),
-            BelongsTo::make('brand'),
-            BelongsTo::make('category'),
-            Image::make('商品圖片','cover'),
-            Image::make('Cover(en)','cover_en'),
-            Text::make('應用車型','car'),
-            Text::make('Car(en)','car_en'),
-            Text::make('排序','sort'),
-            Text::make('Sort(en)','sort_en')
+            Text::make('品牌名稱','title'),
+            Image::make('品牌Logo','logo')
+
         ];
     }
 
