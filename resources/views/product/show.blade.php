@@ -8,23 +8,17 @@
 </style>
 @endsection
 @section('main')
-<section class="relative min-h-screen bg-center bg-no-repeat bg-cover main" style="background-image:url('/images/bg-1.png')">
-    <div class="bg-white/50 border border-[#3175B2] rounded-3xl flex items-start h-fit w-fit absolute inset-0 m-auto p-20 shadow-md shadow-[#BFD7ED]">
-        <a href="#" class="absolute top-[-70px] left-0 text-[#013565]"><i class="fa-solid fa-chevron-left mr-3"></i>BACK</a>
-        <div class="w-[300px] aspect-square">
-            <img src="/images/{{$product->cover}}" alt="" class="block img-shadow w-full h-full object-cover">
+<section class="relative min-h-screen bg-center bg-no-repeat bg-cover main flex justify-center items-center" style="background-image:url('/images/bg-1.png')">
+    <div class="bg-white/70 border border-[#3175B2] rounded-3xl flex items-start h-fit w-fit p-20 shadow-md shadow-[#BFD7ED] w-[1000px]">
+        <a href="#" class="absolute top-[-70px] left-0 text-[#013565]" onclick="history.back()"><i class="fa-solid fa-chevron-left mr-3"></i>BACK</a>
+        <div class="w-1/2 aspect-square">
+            <img src="/images/{{$product->cover}}" alt="" class="w-full h-full object-cover">
         </div>
-        <div class="w-[400px] text-center">
-            <h3 class="text-3xl mb-6">{{$product->title_en}}</h3>
-            <div class="mb-5">{{__('car_model')}}</div>
-            <ul class="list-disc list-inside">
-                @php
-                    $car = explode(',',$product->car_en);
-                @endphp
-                @foreach($car as $c)
-                <li>{{$c}}</li>
-                @endforeach
-            </ul>
+        <div class="w-1/2 px-4">
+            <h3 class="text-2xl font-bold mb-4">{{$product->title}}</h3>
+            <div>
+                {!!$product->body!!}
+            </div>
         </div>
     </div>
 </section>

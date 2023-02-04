@@ -5,6 +5,7 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -46,6 +47,8 @@ class Product extends Resource
             ID::make()->sortable(),
             Text::make('商品名稱','title'),
             Text::make('Title(en)','title_en'),
+            Trix::make('商品資訊','body'),
+            Trix::make('Info(en)','body_en'),
             BelongsTo::make('brand'),
             BelongsTo::make('category'),
             Image::make('商品圖片','cover'),

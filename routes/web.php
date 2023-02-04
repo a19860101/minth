@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,7 +20,9 @@ Route::get('/', function () {
 Route::get('/product',function(){
     return view('product.index');
 });
-Route::get('/product/{id}',[PageController::class,'product_show']);
+// Route::get('/product/{id}',[PageController::class,'product_show']);
+Route::get('/product/{id}',[ProductController::class,'product_category']);
+Route::get('/product/detail/{id}',[ProductController::class,'show']);
 Route::get('/equipment',function(){
     return view('equipment.index');
 });
