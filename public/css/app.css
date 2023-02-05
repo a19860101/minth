@@ -1028,6 +1028,12 @@ select {
 .overflow-scroll {
   overflow: scroll;
 }
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -1822,8 +1828,16 @@ select {
     left: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:p-20 {

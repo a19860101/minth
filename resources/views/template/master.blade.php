@@ -12,11 +12,53 @@
         .active {
             transform: rotate(90deg);
         }
+        .toggle {
+            width: 40px;
+            height: 40px;
+            background-color: #111;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+        }
+        .toggle span {
+            position: absolute;
+            width: 70%;
+            height: 3px;
+            background-color: #fff;
+            inset:0;
+            margin: auto;
+        }
+        .toggle span::before,.toggle span::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+        }
+        .toggle span::before {
+            bottom: 8px;
+        }
+        .toggle span::after {
+            top: 8px;
+        }
+        nav {
+            transition:left .3s;
+            left: -330px;
+        }
+
+        nav.open {
+            left:0;
+        }
     </style>
 </head>
 <body>
     <main class="">
-        <nav class="h-screen bg-[#BFD7ED] left-[-330px] md:left-0 w-[330px] flex flex-col justify-between tracking-wider fixed z-50 overflow-scroll">
+        <div class="toggle block md:hidden">
+            <span></span>
+        </div>
+        <nav class="h-screen bg-[#BFD7ED]  md:left-0 w-[330px] flex flex-col justify-between tracking-wider fixed z-50 overflow-y-scroll">
+            
             <div class="text-center pt-20 pb-10">
                 <x-application-logo></x-application-logo>
                 <h1 class="mt-4">{{__('minth')}}</h1>
@@ -79,7 +121,13 @@
             // let pathname = url.pathname;
         
         })
-
+        let tg = document.querySelector('.toggle');
+        tg.onclick = e => {
+            let nav = document.querySelector('nav');
+            console.log(nav.classList);
+            // nav.classList.remove('left-[-330px]');
+            nav.classList.toggle('open');
+        }
     </script>
     @yield('js')
 </body>
