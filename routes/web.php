@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\LinkController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -59,9 +60,7 @@ Route::get('/contact',function(){
 });
 Route::get('/news',[PostController::class,'index']);
 Route::get('/news/{id}',[PostController::class,'show']);
-Route::get('/links',function(){
-    return view('posts.links');
-});
+Route::get('/links',[LinkController::class,'index']);
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
