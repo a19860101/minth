@@ -14,7 +14,7 @@
         <img src="/images/philosophy.jpg" alt="" class="w-full h-full object-cover">
         <h1 class="text-2xl text-white text-center absolute m-auto inset-0 w-full h-full bg-black/50 leading-[200px]">{{__('philosophy')}}</h1>
     </div>
-    <div class="p-20">
+    <div class="p-10 md:p-20 max-w-screen-md mx-auto">
         {{-- <div class="text-center space-y-6 mb-12 text-xl">
             <div>顧客滿意</div>
             <div>員工滿意</div>

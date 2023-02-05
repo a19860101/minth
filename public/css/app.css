@@ -675,6 +675,9 @@ select {
 .left-\[-330px\] {
   left: -330px;
 }
+.right-12 {
+  right: 3rem;
+}
 .z-0 {
   z-index: 0;
 }
@@ -1287,6 +1290,10 @@ select {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1817,6 +1824,20 @@ select {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:p-20 {
+    padding: 5rem;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:pl-\[330px\] {

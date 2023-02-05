@@ -5,8 +5,8 @@
         <img src="/images/newslist.jpg" alt="" class="w-full h-full object-cover">
         <h1 class="text-2xl text-white text-center absolute m-auto inset-0 w-full h-full bg-black/50 leading-[200px]">{{__('links')}}</h1>
     </div>
-    <div class="py-5">
-        <ul class="w-[800px] mx-auto">
+    <div class="py-5 max-w-screen-md mx-auto px-12">
+        <ul>
             <li class="flex flex-wrap justify-between py-3">
                 <span class="text-xl font-bold">{{__('title')}}</span>
                 <span class="text-xl font-bold">{{__('public_time')}}</span>
