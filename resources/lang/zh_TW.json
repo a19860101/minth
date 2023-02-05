@@ -15,6 +15,8 @@
     "minth":"敏孚機器工業股份有限公司",
     "car_model":"應用車型",
     "Test Equipment":"測試設備",
-    "Machine Equipment":"製造設備"
+    "Machine Equipment":"製造設備",
+    "public_time":"發佈時間",
+    "title":"標題"
 
 }

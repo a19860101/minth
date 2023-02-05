@@ -16,7 +16,7 @@
 </head>
 <body>
     <main class="">
-        <nav class="h-screen bg-[#BFD7ED] w-[330px] flex flex-col justify-between tracking-wider fixed z-50">
+        <nav class="h-screen bg-[#BFD7ED] left-[-330px] md:left-0 w-[330px] flex flex-col justify-between tracking-wider fixed z-50 overflow-scroll">
             <div class="text-center pt-20 pb-10">
                 <x-application-logo></x-application-logo>
                 <h1 class="mt-4">{{__('minth')}}</h1>
@@ -56,7 +56,7 @@
                 <a href="#"></a>
             </div>
         </nav>
-        <section class="absolute pl-[330px] w-full">
+        <section class="absolute pl-0 md:pl-[330px] w-full">
             @yield('main')
             <footer class="w-full bg-[#d9d9d9] text-center py-4 mt-[-56px] relative">
                 Copyright&copy;2022敏孚機器工業 All rights reserved

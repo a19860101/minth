@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +18,9 @@ use App\Http\Controllers\ProductController;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/home',function(){
+    return view('home');
+});
 Route::get('/product',function(){
     return view('product.index');
 });
@@ -29,6 +33,9 @@ Route::get('/equipment',function(){
 // Route::get('/equipment/{id}',function(){
 //     return view('equipment.show');
 // });
+Route::get('/equipment/feature',function(){
+    return view('equipment.feature');
+});
 Route::get('/equipment/test',function(){
     return view('equipment.test');
 });
@@ -50,9 +57,8 @@ Route::get('/join-us',function(){
 Route::get('/contact',function(){
     return view('page.contact');
 });
-Route::get('/news',function(){
-    return view('posts.index');
-});
+Route::get('/news',[PostController::class,'index']);
+Route::get('/news/{id}',[PostController::class,'show']);
 Route::get('/links',function(){
     return view('posts.links');
 });
