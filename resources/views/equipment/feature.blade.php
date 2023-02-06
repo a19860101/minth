@@ -3,7 +3,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 @endsection
 @section('main')
-<section class="relative min-h-screen bg-center bg-no-repeat bg-cover main flex justify-center items-center py-12">
+<section class="relative min-h-screen bg-center bg-no-repeat bg-cover main pb-12">
+    <div class="w-full h-[200px] relative mb-8">
+        <img src="/images/feature-1.jpg" alt="" class="w-full h-full object-cover">
+        <h1 class="text-5xl text-white text-center absolute m-auto inset-0 w-full h-full bg-black/50 leading-[200px]">{{__('feature_equipment')}}</h1>
+    </div>
     {{-- <div class="bg-white/70 border border-[#3175B2] rounded-3xl h-fit w-fit p-20 shadow-md shadow-[#BFD7ED] w-[1000px]"> --}}
        
     {{-- </div> --}}
