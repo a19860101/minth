@@ -12,7 +12,7 @@
 <section class="relative min-h-screen bg-center bg-no-repeat bg-cover main">
     <div class="w-full h-[200px] relative">
         <img src="/images/philosophy.jpg" alt="" class="w-full h-full object-cover">
-        <h1 class="text-2xl text-white text-center absolute m-auto inset-0 w-full h-full bg-black/50 leading-[200px]">{{__('philosophy')}}</h1>
+        <h1 class="text-5xl text-white text-center absolute m-auto inset-0 w-full h-full bg-black/50 leading-[200px]">{{__('philosophy')}}</h1>
     </div>
     <div class="p-10 md:p-20 max-w-screen-md mx-auto">
         {{-- <div class="text-center space-y-6 mb-12 text-xl">

@@ -43,7 +43,7 @@
 <section class="main relative min-h-screen bg-center bg-no-repeat bg-cover">
     <div class="w-full h-[200px] relative">
         <img src="/images/history.jpg" alt="" class="w-full h-full object-cover">
-        <h1 class="text-2xl text-white text-center absolute m-auto inset-0 w-full h-full bg-black/50 leading-[200px]">公司沿革</h1>
+        <h1 class="text-5xl text-white text-center absolute m-auto inset-0 w-full h-full bg-black/50 leading-[200px]">{{__('history')}}</h1>
     </div>
     <div class="flex py-12 pb-20">
         {{-- <h2 class="text-2xl absolute text-center w-full top-0 left-0 text-[#013565]">公司沿革</h2> --}}
