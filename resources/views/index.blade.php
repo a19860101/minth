@@ -6,13 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>敏孚機器工業股份有限公司</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    @php
-        $imgs = ['home_1','home_2','home_3','home_4','home_5',];
-        shuffle($imgs);
-    @endphp
     <style>
         body {
-            background-image: url('/images/{{$imgs[0]}}.jpg');
+            background-image: url('/images/tesla.jpg');
             background-color: #ccc;
             background-size: cover;
             background-position: center;
@@ -24,10 +20,11 @@
 </head>
 <body>
     <div class="w-full h-screen relative">
-        <img src="/images/bg.png" alt="" class="w-full h-full object-cover opacity-80">
-        <div class="w-[1000px] h-fit m-auto absolute inset-0">
+        <div class="w-full h-full object-cover bg-white/40"></div>
+        {{-- <img src="/images/bg.png" alt="" class="w-full h-full object-cover opacity-40"> --}}
+        <div class="lg:w-2/3 w-10/12 h-fit m-auto absolute inset-0">
             <img src="/images/intro.png" alt="" class="w-full h-full object-cover">
-            <a href="/home" class="absolute right-0 px-8 py-1 text-white border border-white rounded-full hover:bg-white hover:text-[#3175B3] transition">Enter</a>
+            <a href="/home" class="absolute lg:bottom-0 lg:right-0 bottom-[30px] right-[50px] px-8 py-1 text-black rounded-full bg-white hover:text-[#3175B3] transition">Enter</a>
         </div>
     </div>
     {{-- <div class="w-[1280px] h-[600px] absolute inset-0 m-auto"> --}}
