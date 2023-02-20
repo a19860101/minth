@@ -20,7 +20,7 @@
 </head>
 <body>
     <div class="w-full h-screen relative">
-        <div class="w-full h-full object-cover bg-white/40"></div>
+        <div class="w-full h-full object-cover bg-white/60"></div>
         {{-- <img src="/images/bg.png" alt="" class="w-full h-full object-cover opacity-40"> --}}
         <div class="lg:w-2/3 w-10/12 h-fit m-auto absolute inset-0">
             <img src="/images/intro.png" alt="" class="w-full h-full object-cover">
