@@ -45,21 +45,21 @@ class Product extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('商品名稱','title'),
+            Text::make('商品名稱','title')->sortable(),
             Text::make('Title(en)','title_en'),
             Trix::make('商品資訊','body'),
             Trix::make('Info(en)','body_en'),
-            BelongsTo::make('brand'),
-            BelongsTo::make('category'),
-            Image::make('商品封面','cover'),
+            BelongsTo::make('brand')->sortable(),
+            BelongsTo::make('category')->sortable(),
+            Image::make('商品封面','cover')->hideFromIndex(),
             Image::make('商品圖片1','img_1')->hideFromIndex(),
             Image::make('商品圖片2','img_2')->hideFromIndex(),
             Image::make('商品圖片3','img_3')->hideFromIndex(),
             Image::make('商品圖片4','img_4')->hideFromIndex(),
             Image::make('商品圖片5','img_5')->hideFromIndex(),
-            Image::make('Cover(en)','cover_en'),
-            Text::make('應用車型','car'),
-            Text::make('Car(en)','car_en'),
+            Image::make('Cover(en)','cover_en')->hideFromIndex(),
+            Text::make('應用車型','car')->hideFromIndex()->sortable(),
+            Text::make('Car(en)','car_en')->hideFromIndex(),
             Text::make('排序','sort'),
             Text::make('Sort(en)','sort_en')
         ];

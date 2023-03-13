@@ -67,7 +67,7 @@
                 <div class="py-2"><a href="#">{{__('product')}}</a></div>
                 <ul class="pl-3">
                     @php
-                        $products = \App\Models\Category::orderBy('id','DESC')->get();
+                        $products = \App\Models\Category::orderBy('sort','ASC')->get();
                     @endphp
                     @foreach($products as $p)
                     <li class="py-1"><a href="/product/{{$p->id}}" class="text-[#686868] hover:text-[#075ba8]">{{$p->title_en}}</a></li>
@@ -84,7 +84,7 @@
                 <ul class="pl-3">
                     <li class="py-1"><a href="/news" class="text-[#686868] hover:text-[#075ba8]">{{__('news_list')}}</a></li>
                     {{-- <li class="py-1"><a href="#" class="text-[#686868] hover:text-[#075ba8]">消息本文</a></li> --}}
-                    <li class="py-1"><a href="/links" class="text-[#686868] hover:text-[#075ba8]">{{__('links')}}</a></li>
+                    <li class="py-1"><a href="/links" class="text-[#686868] hover:text-[#075ba8]">{{__('liaanks')}}</a></li>
                 </ul>
                 <div class="py-2"><a href="#">{{__('company')}}</a></div>
                 <ul class="pl-3">

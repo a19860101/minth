@@ -7,7 +7,7 @@
         $brands = \App\Models\Brand::get();
         @endphp
         <div>
-            @foreach($brands as $brand)
+            {{-- @foreach($brands as $brand)
             @if($brand->products->first())
             <h3 class="text-3xl font-bold p-3">{{$brand->title}}</h3>
             @endif
@@ -21,6 +21,24 @@
                         <div><a href="/product/detail/{{$prod->id}}">{{$prod->title}}</a></div>
                     </div>
                     @endif
+                @endforeach
+            </div>
+            @endforeach --}}
+            @foreach($products as $key => $value)
+            @php
+            $brand = \App\Models\Brand::find($key);
+            @endphp
+            <h3 class="text-3xl font-bold p-3">{{$brand->title}}</h3>
+            <div class="flex flex-wrap">
+                @foreach($value as $prod)
+                    {{-- @if($prod->brand_id == $brand->id) --}}
+                    <div class="w-1/4 p-3">
+                        <div class="aspect-square">
+                            <img src="/images/{{$prod->cover}}" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div><a href="/product/detail/{{$prod->id}}">{{$prod->title}}</a></div>
+                    </div>
+                    {{-- @endif --}}
                 @endforeach
             </div>
             @endforeach
