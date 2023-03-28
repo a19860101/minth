@@ -24,6 +24,7 @@
         {{-- <img src="/images/bg.png" alt="" class="w-full h-full object-cover opacity-40"> --}}
         <div class="lg:w-2/3 w-10/12 h-fit m-auto absolute inset-0">
             <img src="/images/intro.png" alt="" class="w-full h-full object-cover">
+            {{-- <a href="/equipment/feature" class="absolute lg:bottom-0 lg:right-0 bottom-[30px] right-[50px] px-8 py-1 text-black rounded-full bg-white hover:text-[#3175B3] transition">Enter</a> --}}
             <a href="/home" class="absolute lg:bottom-0 lg:right-0 bottom-[30px] right-[50px] px-8 py-1 text-black rounded-full bg-white hover:text-[#3175B3] transition">Enter</a>
         </div>
     </div>
