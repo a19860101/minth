@@ -35,11 +35,11 @@
     <div class="w-[800px] shrink-0">
         <div class="front py-32 relative">
             <img src="/images/home/front.png" alt="" class="">
-            <div class="flex items-center rounded-full w-max pr-4 absolute top-[268px] right-[98px] bg-transparent transition duration-700 circle-group">    
+            <div class="flex items-center rounded-full w-max pr-4 absolute top-[229px] right-[-44px] bg-transparent transition duration-700 circle-group">    
                 <a href="/product/5" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a>
                 <span class="block ml-4 circle-text text-transparent transition duration-700">Door B-line Inner Moulding</span>
             </div>
-            <div class="flex items-center rounded-full w-max pr-4 absolute top-[218px] right-[-100px] bg-transparent transition duration-700 circle-group">    
+            <div class="flex items-center rounded-full w-max pr-4 absolute top-[185px] right-[-179px] bg-transparent transition duration-700 circle-group">    
                 <a href="/product/6" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a>
                 <span class="block ml-4 circle-text text-transparent transition duration-700">Door B-line Outer Moulding</span>
             </div>

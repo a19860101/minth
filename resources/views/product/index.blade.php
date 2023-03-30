@@ -32,7 +32,7 @@
             <div class="flex flex-wrap">
                 @foreach($value as $prod)
                     {{-- @if($prod->brand_id == $brand->id) --}}
-                    <div class="w-1/4 p-3">
+                    <div class="lg:w-1/4 w-1/2 p-3">
                         <div class="aspect-square">
                             <img src="/images/{{$prod->cover}}" alt="" class="w-full h-full object-cover">
                         </div>

@@ -10,7 +10,7 @@
 </style>
 @endsection
 @section('main')
-<section class="relative min-h-screen bg-center bg-no-repeat bg-cover main flex justify-center items-center" style="background-image:url('/images/feature-1.jpg')">
+<section class="relative min-h-screen bg-center bg-no-repeat bg-cover main flex justify-center items-center py-32" style="background-image:url('/images/feature-1.jpg')">
     <div class="bg-white/60 backdrop-blur-lg border border-[#3175B2] rounded-3xl flex flex-wrap items-start h-fit w-fit p-20 shadow-md shadow-[#BFD7ED] w-[1000px]">
         <a href="/product/{{$cid}}" class="absolute top-[-70px] left-0 text-[#013565] inline-block px-3 py-1 bg-white rounded">
             <i class="fa-solid fa-chevron-left mr-3"></i>BACK
@@ -21,11 +21,11 @@
                 {!!$product->body!!}
             </div>
         </div>
-        <div class="w-1/2 aspect-square p-4">
+        {{-- <div class="w-1/2 aspect-square p-4">
             <a href="/images/{{$product->cover}}" data-fancybox="g">
                 <img src="/images/{{$product->cover}}" alt="" class="w-full h-full object-cover">
             </a>
-        </div>
+        </div> --}}
         @if($product->img_1 != '')
         <div class="w-1/2 aspect-square p-4">
             <a href="/images/{{$product->img_1}}" data-fancybox="g">
@@ -58,6 +58,27 @@
         <div class="w-1/2 aspect-square p-4">
             <a href="/images/{{$product->img_5}}" data-fancybox="g">
                 <img src="/images/{{$product->img_5}}" alt="" class="w-full h-full object-cover">
+            </a>
+        </div>
+        @endif
+        @if($product->img_6 != '')
+        <div class="w-1/2 aspect-square p-4">
+            <a href="/images/{{$product->img_6}}" data-fancybox="g">
+                <img src="/images/{{$product->img_6}}" alt="" class="w-full h-full object-cover">
+            </a>
+        </div>
+        @endif
+        @if($product->img_7 != '')
+        <div class="w-1/2 aspect-square p-4">
+            <a href="/images/{{$product->img_7}}" data-fancybox="g">
+                <img src="/images/{{$product->img_7}}" alt="" class="w-full h-full object-cover">
+            </a>
+        </div>
+        @endif
+        @if($product->img_8 != '')
+        <div class="w-1/2 aspect-square p-4">
+            <a href="/images/{{$product->img_8}}" data-fancybox="g">
+                <img src="/images/{{$product->img_8}}" alt="" class="w-full h-full object-cover">
             </a>
         </div>
         @endif

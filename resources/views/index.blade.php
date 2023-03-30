@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-    <div class="w-full h-screen relative">
+    <div class="w-full h-screen relative sm:block hidden">
         <div class="w-full h-full object-cover bg-white/60"></div>
         {{-- <img src="/images/bg.png" alt="" class="w-full h-full object-cover opacity-40"> --}}
         <div class="lg:w-2/3 w-10/12 h-fit m-auto absolute inset-0">
@@ -27,6 +27,11 @@
             {{-- <a href="/equipment/feature" class="absolute lg:bottom-0 lg:right-0 bottom-[30px] right-[50px] px-8 py-1 text-black rounded-full bg-white hover:text-[#3175B3] transition">Enter</a> --}}
             <a href="/home" class="absolute lg:bottom-0 lg:right-0 bottom-[30px] right-[50px] px-8 py-1 text-black rounded-full bg-white hover:text-[#3175B3] transition">Enter</a>
         </div>
+    </div>
+    <div class="w-full h-screen sm:hidden block">
+        <div class="w-full h-full object-cover bg-white/60"></div>
+        <img src="/images/intro-s.png" alt="" class="absolute w-[480px] inset-0 m-auto">
+        <a href="/home" class="absolute inset-0 translate-y-[150px] w-fit h-fit m-auto px-8 py-1 text-black rounded-full bg-white hover:text-[#3175B3] transition">Enter</a>
     </div>
     {{-- <div class="w-[1280px] h-[600px] absolute inset-0 m-auto"> --}}
         {{-- <div class="absolute bottom-[80px] right-[150px] space-x-4"> --}}
