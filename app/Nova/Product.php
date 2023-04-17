@@ -46,7 +46,7 @@ class Product extends Resource
         return [
             ID::make()->sortable(),
             Text::make('商品名稱','title')->sortable(),
-            // Text::make('Title(en)','title_en'),
+            Text::make('Title(en)','title_en'),
             Trix::make('商品資訊','body'),
             Trix::make('Info(en)','body_en'),
             BelongsTo::make('brand')->sortable(),
