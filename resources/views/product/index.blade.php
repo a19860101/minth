@@ -3,7 +3,7 @@
 <section class="relative min-h-screen bg-center bg-no-repeat bg-cover bg-fixed main flex justify-center items-center pb-20" style="background-image:url('/images/feature-2.jpg')">
     <div class="bg-white/60 backdrop-blur-lg border border-[#3175B2] rounded-3xl h-fit w-fit p-20 shadow-md shadow-[#BFD7ED] w-[1000px]">
         {{-- <h2 class="text-4xl font-bold p-3">{{__($category->title_en)}}</h2> --}}
-        <h2 class="text-4xl font-bold p-3">{{$category->title_en == 'V-TYPE' ? 'VARIABLE TYPE' : $category->title_en}}</h2>
+        <h2 class="text-4xl font-bold p-3">{{$category->title_en == 'V-TYPE' ? 'Variable Extrusion Type' : $category->title_en}}</h2>
         @php
         $brands = \App\Models\Brand::get();
         @endphp
@@ -34,9 +34,11 @@
                 @foreach($value as $prod)
                     {{-- @if($prod->brand_id == $brand->id) --}}
                     <div class="lg:w-1/4 w-1/2 p-3">
+                        <a href="/product/detail/{{$prod->id}}">
                         <div class="aspect-square">
                             <img src="/images/{{$prod->cover}}" alt="" class="w-full h-full object-cover">
                         </div>
+                        </a>
                         <div><a href="/product/detail/{{$prod->id}}">{{$prod->title}}</a></div>
                     </div>
                     {{-- @endif --}}

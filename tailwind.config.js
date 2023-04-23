@@ -12,7 +12,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
+                serif: ['DM Serif Display'],
             },
         },
     },
