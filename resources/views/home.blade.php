@@ -10,28 +10,18 @@
         background-attachment: fixed;
         background-blend-mode: overlay;
     }
-    .circle-group {
-        background-color: #e0f2fe;
+    .btn {
+        background-color: #eee;
+        padding:12px 20px;
+        border-radius:100px;
+        transition: 300ms;
     }
-    .circle-text {
-        color: #111;
+    .btn:hover {
+        background-color: #ff5f72;
     }
-    /* .circle-group:hover .circle-text{
-        color: #111;
-        transform: translateX(0);
-    } */
-    .circle {
-        animation: b 2s infinite;
-    }
-    @keyframes b {
-        33% {
-            transform: scale(1.5);
-            opacity: .5;
-        }
-        66% {
-            transform: scale(1);
-            opacity: 1;
-        }
+    .active {
+
+        background: #ff5f72;
     }
 </style>
 @endsection
@@ -49,40 +39,55 @@
     {{-- <div class="w-[800px] shrink-0 lg:block hidden"> --}}
     <div class="w-[800px] shrink-0">
         <div class="front py-32 relative">
-            <div class="absolute flex flex-col space-y-4">
-                <a href="/product/5">Door B-line Inner Moulding</a>
-                <a href="/product/6">Door B-line Outer Moulding</a>
-                <a href="/product/4">Windshield Moulding</a>
+            <div class="absolute flex flex-col space-y-4 left-[-100px]">
+                <a href="/product/5" class="btn" data-target="#inner">Door B-line Inner Moulding</a>
+                <a href="/product/6" class="btn" data-target="#outer">Door B-line Outer Moulding</a>
+                <a href="/product/4" class="btn" data-target="#wind">Windshield Moulding</a>
             </div>
             <img src="/images/home/front.png" alt="" class="">
-            <div class="flex items-center rounded-full w-max pr-4 absolute top-[229px] right-[-44px] bg-transparent transition duration-700 circle-group">    
-                <a href="/product/5" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a>
+            <div class="w-10 h-10 rounded-full absolute top-[200px] right-[70px] bg-sky-500 transition" id="outer">    
+                {{-- <a href="/product/5" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
                 {{-- <span class="block ml-2 circle-text text-transarent transition duration-700">Door B-line Inner Moulding</span> --}}
             </div>
-            <div class="flex items-center rounded-full w-max pr-4 absolute top-[180px] right-[-179px] bg-transparent transition duration-700 circle-group">    
-                <a href="/product/6" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a>
-                <span class="block ml-2 circle-text text-transparent transition duration-700">Door B-line Outer Moulding</span>
+            <div class="w-10 h-10 rounded-full absolute top-[212px] right-[150px] bg-sky-500 transition" id="inner">    
+                {{-- <a href="/product/6" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
+                {{-- <span class="block ml-2 circle-text text-transparent transition duration-700">Door B-line Outer Moulding</span> --}}
             </div>
-            <div class="flex items-center rounded-full w-max pr-4 absolute top-[230px] left-[270px] bg-transparent transition duration-700 circle-group">    
-                <a href="/product/4" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a>
-                <span class="block ml-2 circle-text text-transparent transition duration-700">Windshield Moulding</span>
+            <div class="w-10 h-10 rounded-full absolute top-[230px] left-[270px] bg-sky-500 transition" id="wind">    
+                {{-- <a href="/product/4" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
+                {{-- <span class="block ml-2 circle-text text-transparent transition duration-700">Windshield Moulding</span> --}}
             </div>
         </div>
         <div class="back py-32 relative">
+            <div class="absolute flex flex-col space-y-4 left-[-100px]">
+                <a href="/product/1" class="btn" data-target="#side">Body Side Moulding</a>
+                <a href="/product/2" class="btn" data-target="#roof">Roof Moulding</a>
+                <a href="/product/3" class="btn" data-target="#rear">Rear Window Moulding</a>
+            </div>
             <img src="/images/home/back.png" alt="" class="w-full">
-            <div class="flex items-center rounded-full w-max pr-4 absolute top-[300px] left-[600px] bg-transparent transition duration-700 circle-group">    
-                <a href="/product/1" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a>
-                <span class="block ml-2 circle-text text-transparent transition duration-700">Body Side Moulding</span>
+            <div class="w-10 h-10 rounded-full absolute top-[300px] left-[600px] bg-sky-500 transition" id="side">    
+                {{-- <a href="/product/1" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
+                {{-- <span class="block ml-2 circle-text text-transparent transition duration-700">Body Side Moulding</span> --}}
             </div>
-            <div class="flex items-center rounded-full w-max pr-4 absolute top-[100px] right-[150px] bg-transparent transition duration-700 circle-group">    
-                <a href="/product/2" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a>
-                <span class="block ml-2 circle-text text-transparent transition duration-700">Roof Moulding</span>
+            <div class="w-10 h-10 rounded-full absolute top-[100px] right-[350px] bg-sky-500 transition" id="roof">    
+                {{-- <a href="/product/2" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
+                {{-- <span class="block ml-2 circle-text text-transparent transition duration-700">Roof Moulding</span> --}}
             </div>
-            <div class="flex items-center rounded-full w-max pr-4 absolute top-[200px] left-[200px] bg-transparent transition duration-700 circle-group">    
-                <a href="/product/3" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a>
-                <span class="block ml-2 circle-text text-transparent transition duration-700">Rear Window Moulding</span>
+            <div class="w-10 h-10 rounded-full absolute top-[200px] left-[150px] bg-sky-500 transition" id="rear">    
+                {{-- <a href="/product/3" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
+                {{-- <span class="block ml-2 circle-text text-transparent transition duration-700">Rear Window Moulding</span> --}}
             </div>
         </div>
     </div>
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+    $(function(){
+        // let ta = $('.btns').data('target');
+        $('.btn').hover(function(){
+            let ta = $(this).data('target');
+            $(ta).toggleClass('active');
+        });
+    })
+</script>
 @endsection

@@ -714,6 +714,36 @@ select {
 .left-\[-330px\] {
   left: -330px;
 }
+.right-\[100px\] {
+  right: 100px;
+}
+.right-\[120px\] {
+  right: 120px;
+}
+.top-\[212px\] {
+  top: 212px;
+}
+.right-\[70px\] {
+  right: 70px;
+}
+.left-\[-100px\] {
+  left: -100px;
+}
+.left-\[-200px\] {
+  left: -200px;
+}
+.left-\[500px\] {
+  left: 500px;
+}
+.right-\[350px\] {
+  right: 350px;
+}
+.left-\[100px\] {
+  left: 100px;
+}
+.left-\[150px\] {
+  left: 150px;
+}
 .z-0 {
   z-index: 0;
 }
@@ -1264,6 +1294,10 @@ select {
 .bg-zinc-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+}
+.bg-sky-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 74 110 / var(--tw-bg-opacity));
 }
 .bg-cover {
   background-size: cover;
