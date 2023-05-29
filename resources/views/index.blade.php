@@ -82,9 +82,9 @@
                 <div class="p-2 w-16 grow-0"><img src="/images/subaru.png" alt="" class="w-full"></div>
             </div>
         </div>
-        <div class="xl:w-[500px] w-[450px] bg-zinc-200 ml-auto grow-0 shrink-0 text-center pt-36 relative flex flex-col">
-            <h1 class="text-center mb-16">
-                <span class="text-4xl inline-block mb-3">Minth Technique Corp</span>
+        <div class="xl:w-[500px] w-[450px] bg-zinc-200 ml-auto grow-0 shrink-0 text-center pt-20 relative flex flex-col">
+            <h1 class="text-center mb-12">
+                <span class="text-4xl inline-block mb-2">Minth Technique Corp</span>
                 <br>
                 <span class="text-2xl inline-block">敏孚機器工業股份有限公司</span>
             </h1>
