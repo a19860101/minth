@@ -62,6 +62,26 @@
                 <img src="/images/feature-10.jpg" alt="" class="w-full h-full object-cover">
             </a>
         </div>
+        <div class="w-1/2 md:w-1/4 aspect-square p-4">
+            <a href="/images/DSC00040.JPG" data-lightbox='g'>
+                <img src="/images/DSC00040.JPG" alt="" class="w-full h-full object-cover">
+            </a>
+        </div>
+        <div class="w-1/2 md:w-1/4 aspect-square p-4">
+            <a href="/images/DSC00044.JPG" data-lightbox='g'>
+                <img src="/images/DSC00044.JPG" alt="" class="w-full h-full object-cover">
+            </a>
+        </div>
+        <div class="w-1/2 md:w-1/4 aspect-square p-4">
+            <a href="/images/DSC00046.JPG" data-lightbox='g'>
+                <img src="/images/DSC00046.JPG" alt="" class="w-full h-full object-cover">
+            </a>
+        </div>
+        <div class="w-1/2 md:w-1/4 aspect-square p-4">
+            <a href="/images/DSC00053.JPG" data-lightbox='g'>
+                <img src="/images/DSC00053.JPG" alt="" class="w-full h-full object-cover">
+            </a>
+        </div>
     </div>
 </section>
 @endsection

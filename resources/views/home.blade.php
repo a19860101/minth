@@ -20,65 +20,41 @@
         background-color: #ff5f72;
     }
     .active {
-
-        background: #ff5f72;
+        animation: flash .6s alternate infinite;
+        /* background: #ff5f72; */
+    }
+    @keyframes flash{
+        to {
+            opacity: .2;
+            transform: scale(1.2);
+        }
     }
 </style>
 @endsection
 @section('main')
 <section class="main relative  bg-center bg-no-repeat bg-cover">
-    <div class="w-full h-[200px] relative">
-        {{-- <img src="/images/feature-4.jpg" alt="" class="w-full h-full object-cover"> --}}
-        <h1 class="text-5xl text-black text-center absolute m-auto inset-0 w-full h-full bg-zinc-100 leading-[200px]">{{__('Major Product')}}</h1>
+    <div class="w-full h-[150px] relative">
+        <h1 class="text-5xl text-black text-center absolute m-auto inset-0 w-full h-full bg-zinc-100 leading-[150px]">{{__('Major Product')}}</h1>
     </div>
 </section>
-<section class="relative min-h-screen bg-center bg-no-repeat bg-cover main flex justify-center items-center backdrop-blur">
-    {{-- <div class="bg-white/70 border border-[#3175B2] rounded-3xl h-fit w-fit p-20 shadow-md shadow-[#BFD7ED] w-[1000px]"> --}}
-       
-    {{-- </div> --}}
-    {{-- <div class="w-[800px] shrink-0 lg:block hidden"> --}}
-    <div class="w-[800px] shrink-0">
-        <div class="front py-32 relative">
-            <div class="absolute flex flex-col space-y-4 left-[-100px]">
-                <a href="/product/5" class="btn" data-target="#inner">Door B-line Inner Moulding</a>
-                <a href="/product/6" class="btn" data-target="#outer">Door B-line Outer Moulding</a>
+<section class="relative min-h-screen bg-center bg-no-repeat bg-cover main flex justify-around pt-10 border border-red-500">
+    {{-- <div class="w-[800px] shrink-0"> --}}
+        {{-- <div class="front py-32 relative"> --}}
+            <div class="flex flex-col w-[250px]  space-y-4">
+                <a href="/product/6" class="btn" data-target="#belt">Door Belt Line Moulding</a>
+                <a href="/product/7" class="btn" data-target="#vtype">Variable Extrusion Type</a>
                 <a href="/product/4" class="btn" data-target="#wind">Windshield Moulding</a>
-            </div>
-            <img src="/images/home/front.png" alt="" class="">
-            <div class="w-10 h-10 rounded-full absolute top-[200px] right-[70px] bg-sky-500 transition" id="outer">    
-                {{-- <a href="/product/5" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
-                {{-- <span class="block ml-2 circle-text text-transarent transition duration-700">Door B-line Inner Moulding</span> --}}
-            </div>
-            <div class="w-10 h-10 rounded-full absolute top-[212px] right-[150px] bg-sky-500 transition" id="inner">    
-                {{-- <a href="/product/6" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
-                {{-- <span class="block ml-2 circle-text text-transparent transition duration-700">Door B-line Outer Moulding</span> --}}
-            </div>
-            <div class="w-10 h-10 rounded-full absolute top-[230px] left-[270px] bg-sky-500 transition" id="wind">    
-                {{-- <a href="/product/4" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
-                {{-- <span class="block ml-2 circle-text text-transparent transition duration-700">Windshield Moulding</span> --}}
-            </div>
-        </div>
-        <div class="back py-32 relative">
-            <div class="absolute flex flex-col space-y-4 left-[-100px]">
-                <a href="/product/1" class="btn" data-target="#side">Body Side Moulding</a>
                 <a href="/product/2" class="btn" data-target="#roof">Roof Moulding</a>
-                <a href="/product/3" class="btn" data-target="#rear">Rear Window Moulding</a>
             </div>
-            <img src="/images/home/back.png" alt="" class="w-full">
-            <div class="w-10 h-10 rounded-full absolute top-[300px] left-[600px] bg-sky-500 transition" id="side">    
-                {{-- <a href="/product/1" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
-                {{-- <span class="block ml-2 circle-text text-transparent transition duration-700">Body Side Moulding</span> --}}
+            <div class="p-4  relative w-[800px] self-center">
+                <img src="/images/home/front.png" alt="" class="">
+                <div class="w-7 h-7 rounded-full absolute top-[5%] left-[55%] bg-sky-500 transition" id="vtype"></div>
+                <div class="w-7 h-7 rounded-full absolute top-[25%] left-[76%] bg-sky-500 transition" id="belt"></div>
+                <div class="w-7 h-7 rounded-full absolute top-[28%] left-[36%] bg-sky-500 transition" id="wind"></div>
+                <div class="w-7 h-7 rounded-full absolute top-[1%] left-[73%] bg-sky-500 transition" id="roof"></div>
             </div>
-            <div class="w-10 h-10 rounded-full absolute top-[100px] right-[350px] bg-sky-500 transition" id="roof">    
-                {{-- <a href="/product/2" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
-                {{-- <span class="block ml-2 circle-text text-transparent transition duration-700">Roof Moulding</span> --}}
-            </div>
-            <div class="w-10 h-10 rounded-full absolute top-[200px] left-[150px] bg-sky-500 transition" id="rear">    
-                {{-- <a href="/product/3" class="w-10 h-10 bg-sky-500 rounded-full block circle"></a> --}}
-                {{-- <span class="block ml-2 circle-text text-transparent transition duration-700">Rear Window Moulding</span> --}}
-            </div>
-        </div>
-    </div>
+        {{-- </div> --}}
+    {{-- </div> --}}
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>

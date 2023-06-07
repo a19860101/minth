@@ -5,6 +5,7 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -45,7 +46,12 @@ class Category extends Resource
             ID::make()->sortable(),
             Text::make('分類名稱','title'),
             Text::make('分類名稱(en)','title_en'),
-            Image::make('封面','cover'),
+            Trix::make('敘述','info'),
+            Trix::make('敘述(en)','info_en'),
+            Image::make('封面1','cover_1'),
+            Image::make('封面2','cover_2'),
+            Image::make('封面3','cover_3'),
+            Image::make('封面4','cover_4'),
             Image::make('封面(en)','cover_en'),
             Text::make('排序','sort'),
         ];

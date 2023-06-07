@@ -72,6 +72,7 @@
                 <div class="p-2 w-16 grow-0"><img src="/images/honda.png" alt="" class="w-full"></div>
                 <div class="p-2 w-16 grow-0"><img src="/images/bmw.png" alt="" class="w-full"></div>
                 <div class="p-2 w-16 grow-0"><img src="/images/benz.png" alt="" class="w-full"></div>
+                <div class="p-2 w-16 grow-0"><img src="/images/audi.png" alt="" class="w-full"></div>
                 <div class="w-full 2xl:hidden"></div>
                 <div class="p-2 w-16 grow-0"><img src="/images/landrover.png" alt="" class="w-full"></div>
                 <div class="p-2 w-16 grow-0"><img src="/images/lexus.png" alt="" class="w-full"></div>

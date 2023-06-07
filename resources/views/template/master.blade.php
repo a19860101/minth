@@ -44,7 +44,7 @@
         }
         nav {
             transition:left .3s;
-            left: -330px;
+            left: -300px;
         }
 
         nav.open {
@@ -57,8 +57,8 @@
         <div class="toggle block md:hidden">
             <span></span>
         </div>
-        <nav class="h-screen bg-[#BFD7ED]  md:left-0 w-[330px] flex flex-col justify-between tracking-wider fixed z-50 overflow-y-scroll">
-            
+        <nav class="h-screen bg-[#BFD7ED]  md:left-0 w-[300px] flex flex-col justify-between tracking-wider fixed z-50 overflow-y-scroll">
+        
             <div class="text-center pt-20 pb-10">
                 <x-application-logo></x-application-logo>
                 <h1 class="mt-4">{{__('minth')}}</h1>
@@ -98,7 +98,7 @@
                 <a href="#"></a>
             </div>
         </nav>
-        <section class="absolute pl-0 md:pl-[330px] w-full">
+        <section class="absolute pl-0 md:pl-[300px] w-full">
             @yield('main')
             <footer class="w-full bg-[#d9d9d9] text-center py-4 mt-[-56px] relative">
                 Copyright&copy;2022敏孚機器工業 All rights reserved
@@ -127,7 +127,7 @@
         tg.onclick = e => {
             let nav = document.querySelector('nav');
             console.log(nav.classList);
-            // nav.classList.remove('left-[-330px]');
+            // nav.classList.remove('left-[-300px]');
             nav.classList.toggle('open');
         }
     </script>
