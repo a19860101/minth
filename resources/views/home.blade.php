@@ -23,6 +23,9 @@
         animation: flash .6s alternate infinite;
         /* background: #ff5f72; */
     }
+    .v-active {
+        transform: rotate(180deg);
+    }
     @keyframes flash{
         to {
             opacity: .2;
@@ -41,15 +44,19 @@
     {{-- <div class="w-[800px] shrink-0"> --}}
         {{-- <div class="front py-32 relative"> --}}
             <div class="flex flex-col w-[250px]  space-y-4">
-                <a href="/product/6" class="btn" data-target="#belt">Door Belt Line Moulding</a>
-                <a href="/product/7" class="btn" data-target="#vtype">Variable Extrusion Type</a>
-                <a href="/product/4" class="btn" data-target="#wind">Windshield Moulding</a>
-                <a href="/product/2" class="btn" data-target="#roof">Roof Moulding</a>
+                <a href="/product/6" class="btn" data-target="#belt">{{__('Door Belt Line Moulding')}}</a>
+                {{-- <a href="/product/7" class="btn" data-target="#vtype">V-Type</a> --}}
+                <a href="#" class="btn v flex justify-between items-center" data-target="#vtype">{{__('Windshield Moulding')}}<i class="fa-solid fa-chevron-down duration-500"></i></a>
+                <div class="flex flex-col space-y-4 hidden vo">
+                    <a href="/product/7" class="btn block" data-target="#vtype">Variable Extrusion Type</a>
+                    <a href="/product/4" class="btn block" data-target="#wind">Normal Type/Bottom Moulding</a>
+                </div>
+                <a href="/product/2" class="btn" data-target="#roof">{{__('Roof Moulding')}}</a>
             </div>
             <div class="p-4  relative w-[800px] self-center">
                 <img src="/images/home/front.png" alt="" class="">
                 <div class="w-7 h-7 rounded-full absolute top-[5%] left-[55%] bg-sky-500 transition" id="vtype"></div>
-                <div class="w-7 h-7 rounded-full absolute top-[25%] left-[76%] bg-sky-500 transition" id="belt"></div>
+                <div class="w-7 h-7 rounded-full absolute top-[21%] left-[84%] bg-sky-500 transition" id="belt"></div>
                 <div class="w-7 h-7 rounded-full absolute top-[28%] left-[36%] bg-sky-500 transition" id="wind"></div>
                 <div class="w-7 h-7 rounded-full absolute top-[1%] left-[73%] bg-sky-500 transition" id="roof"></div>
             </div>
@@ -64,6 +71,11 @@
             let ta = $(this).data('target');
             $(ta).toggleClass('active');
         });
+        $('.v').click(function(){
+            $(this).find('i').toggleClass('v-active');
+            $('.vo').slideToggle();
+            return false;
+        })
     })
 </script>
 @endsection

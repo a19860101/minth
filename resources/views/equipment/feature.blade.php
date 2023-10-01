@@ -17,7 +17,7 @@
                 <img src="/images/feature-1.jpg" alt="" class="w-full h-full object-cover">
             </a>
         </div>
-        <div class="w-1/2 md:w-1/4 aspect-square p-4">
+        {{-- <div class="w-1/2 md:w-1/4 aspect-square p-4">
             <a href="/images/feature-2.jpg" data-lightbox='g'>
                 <img src="/images/feature-2.jpg" alt="" class="w-full h-full object-cover">
             </a>
@@ -31,7 +31,7 @@
             <a href="/images/feature-4.jpg" data-lightbox='g'>
                 <img src="/images/feature-4.jpg" alt="" class="w-full h-full object-cover">
             </a>
-        </div>
+        </div> --}}
         <div class="w-1/2 md:w-1/4 aspect-square p-4">
             <a href="/images/feature-5.jpg" data-lightbox='g'>
                 <img src="/images/feature-5.jpg" alt="" class="w-full h-full object-cover">

@@ -25,9 +25,19 @@
 <section class="relative min-h-screen bg-center bg-no-repeat bg-cover bg-fixed main flex justify-center items-center pb-20" style="background-image:url('/images/feature-2.jpg')">
     <div class="bg-white/60 backdrop-blur-lg border border-[#3175B2] rounded-3xl h-fit w-fit p-20 shadow-md shadow-[#BFD7ED] w-[1000px]">
         {{-- <h2 class="text-4xl font-bold p-3">{{__($category->title_en)}}</h2> --}}
+        @if(app()->getLocale() == 'zh_TW')
+        <h2 class="text-4xl font-bold p-3">{{$category->title == 'V-TYPE' ? 'Variable Extrusion Type' : $category->title}}</h2>
+        @else
         <h2 class="text-4xl font-bold p-3">{{$category->title_en == 'V-TYPE' ? 'Variable Extrusion Type' : $category->title_en}}</h2>
+
+        @endif
         <div class="p-3">
+            @if(app()->getLocale() == 'zh_TW')
             {!!$category->info!!}
+            @else
+            {!!$category->info_en!!}
+
+            @endif
         </div>
         @if(!Request::is('product/7'))
         <div class="flex flex-wrap">
@@ -66,8 +76,8 @@
                 <a href="/images/{{$category->cover_1}}" data-fancybox="g">
                     <img src="/images/{{$category->cover_1}}" alt="" class="w-full h-full object-cover">
                 </a>
-                <a href="/images/{{$category->cover_2}}" data-fancybox="g" class="w-6 h-6 bg-red-400 absolute rounded-full top-[54%] left-[33%] flash"></a>
-                <a href="/images/{{$category->cover_3}}" data-fancybox="g" class="w-6 h-6 bg-red-400 absolute rounded-full top-[35%] left-[62%] flash"></a>
+                <a href="/images/{{$category->cover_2}}" data-fancybox="g" class="w-6 h-6 bg-red-400 absolute rounded-full top-[58%] left-[32%] flash"></a>
+                <a href="/images/{{$category->cover_3}}" data-fancybox="g" class="w-6 h-6 bg-red-400 absolute rounded-full top-[24%] left-[80%] flash"></a>
             </div>
         </div>
         @endif

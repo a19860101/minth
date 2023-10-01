@@ -69,17 +69,23 @@
                     @php
                         $products = \App\Models\Category::orderBy('sort','ASC')->get();
                     @endphp
+                    @if(app()->getLocale()=='zh_TW')
                     @foreach($products as $p)
-                    <li class="py-1"><a href="/product/{{$p->id}}" class="text-[#686868] hover:text-[#075ba8]">{{$p->title_en}}</a></li>
+                    <li class="py-1"><a href="/product/zh_TW/{{$p->id}}" class="text-[#686868] hover:text-[#075ba8]">{{$p->title}}</a></li>
                     @endforeach
+                    @else
+                    @foreach($products as $p)
+                    <li class="py-1"><a href="/product/en/{{$p->id}}" class="text-[#686868] hover:text-[#075ba8]">{{$p->title_en}}</a></li>
+                    @endforeach
+                    @endif
                 </ul>
                 <div class="py-2"><a href="#" class="collapse-btn">{{__('equipment')}}</a></div>
                 <ul class="pl-3 hidden">
-                    <li class="py-1"><a href="/equipment/feature" class="text-[#686868] hover:text-[#075ba8]">{{__('feature_equipment')}}</a></li>
-                    <li class="py-1"><a href="/equipment/machine" class="text-[#686868] hover:text-[#075ba8]">{{__('machine_equipment')}}</a></li>
-                    <li class="py-1"><a href="/equipment/test" class="text-[#686868] hover:text-[#075ba8]">{{__('test_equipment')}}</a></li>
+                    <li class="py-1"><a href="/equipment/feature/{{app()->getLocale()}}" class="text-[#686868] hover:text-[#075ba8]">{{__('feature_equipment')}}</a></li>
+                    <li class="py-1"><a href="/equipment/machine/{{app()->getLocale()}}" class="text-[#686868] hover:text-[#075ba8]">{{__('machine_equipment')}}</a></li>
+                    {{-- <li class="py-1"><a href="/equipment/test/{{app()->getLocale()}}" class="text-[#686868] hover:text-[#075ba8]">{{__('test_equipment')}}</a></li> --}}
                 </ul>
-                <div class="py-2"><a href="/certified">{{__('certification')}}<i class="fa-solid fa-chevron-right pl-3 opacity-0"></i></a></div>
+                <div class="py-2"><a href="/certified/{{app()->getLocale()}}">{{__('certification')}}<i class="fa-solid fa-chevron-right pl-3 opacity-0"></i></a></div>
                 <div class="py-2"><a href="#" class="collapse-btn">{{__('news')}}</a></div>
                 <ul class="pl-3 hidden">
                     <li class="py-1"><a href="/news" class="text-[#686868] hover:text-[#075ba8]">{{__('news_list')}}</a></li>
@@ -88,11 +94,11 @@
                 </ul>
                 <div class="py-2"><a href="#" class="collapse-btn">{{__('company')}}</a></div>
                 <ul class="pl-3 hidden">
-                    <li class="py-1"><a href="/history" class="text-[#686868] hover:text-[#075ba8]">{{__('history')}}</a></li>
-                    <li class="py-1"><a href="/philosophy" class="text-[#686868] hover:text-[#075ba8]">{{__('philosophy')}}</a></li>
-                    <li class="py-1"><a href="/join-us" class="text-[#686868] hover:text-[#075ba8]">{{__('join_us')}}</a></li>
+                    <li class="py-1"><a href="/history/{{app()->getLocale()}}" class="text-[#686868] hover:text-[#075ba8]">{{__('history')}}</a></li>
+                    <li class="py-1"><a href="/philosophy/{{app()->getLocale()}}" class="text-[#686868] hover:text-[#075ba8]">{{__('philosophy')}}</a></li>
+                    <li class="py-1"><a href="/join-us/{{app()->getLocale()}}" class="text-[#686868] hover:text-[#075ba8]">{{__('join_us')}}</a></li>
                 </ul>
-                <div class="py-2"><a href="/contact">{{__('contact')}}<i class="fa-solid fa-chevron-right pl-3 opacity-0"></i></a></div>
+                <div class="py-2"><a href="/contact/{{app()->getLocale()}}">{{__('contact')}}<i class="fa-solid fa-chevron-right pl-3 opacity-0"></i></a></div>
             </div>
             <div>
                 <a href="#"></a>

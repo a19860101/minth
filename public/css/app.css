@@ -669,86 +669,17 @@ select {
 .right-\[150px\] {
   right: 150px;
 }
-.top-\[10px\] {
-  top: 10px;
-}
-.left-\[320px\] {
-  left: 320px;
-}
-.top-\[87px\] {
-  top: 87px;
-}
-.left-\[468px\] {
-  left: 468px;
-}
-.top-\[100px\] {
-  top: 100px;
-}
-.left-\[213px\] {
-  left: 213px;
-}
-.top-\[12px\] {
-  top: 12px;
-}
-.left-\[476px\] {
-  left: 476px;
-}
-.bottom-0 {
-  bottom: 0px;
-}
-.bottom-\[56px\] {
-  bottom: 56px;
-}
-.right-12 {
-  right: 3rem;
-}
-.left-\[-300px\] {
-  left: -300px;
-}
-.top-\[200px\] {
-  top: 200px;
-}
-.left-\[100px\] {
-  left: 100px;
-}
-.left-\[400px\] {
-  left: 400px;
-}
-.top-\[52\%\] {
-  top: 52%;
-}
-.left-\[38\%\] {
-  left: 38%;
-}
-.top-\[35\%\] {
-  top: 35%;
-}
-.left-\[62\%\] {
-  left: 62%;
-}
-.top-\[54\%\] {
-  top: 54%;
-}
-.left-\[33\%\] {
-  left: 33%;
-}
-.top-\[0\%\] {
-  top: 0%;
-}
-.left-\[0\%\] {
-  left: 0%;
-}
 .top-\[5\%\] {
   top: 5%;
 }
 .left-\[55\%\] {
   left: 55%;
 }
-.top-\[25\%\] {
-  top: 25%;
+.top-\[21\%\] {
+  top: 21%;
 }
-.left-\[76\%\] {
-  left: 76%;
+.left-\[84\%\] {
+  left: 84%;
 }
 .top-\[28\%\] {
   top: 28%;
@@ -761,6 +692,30 @@ select {
 }
 .left-\[73\%\] {
   left: 73%;
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.bottom-\[56px\] {
+  bottom: 56px;
+}
+.right-12 {
+  right: 3rem;
+}
+.top-\[58\%\] {
+  top: 58%;
+}
+.left-\[32\%\] {
+  left: 32%;
+}
+.top-\[24\%\] {
+  top: 24%;
+}
+.left-\[80\%\] {
+  left: 80%;
+}
+.left-\[-300px\] {
+  left: -300px;
 }
 .z-0 {
   z-index: 0;
@@ -1007,9 +962,6 @@ select {
 .w-\[250px\] {
   width: 250px;
 }
-.w-\[600px\] {
-  width: 600px;
-}
 .w-7 {
   width: 1.75rem;
 }
@@ -1248,6 +1200,10 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
 .border-transparent {
   border-color: transparent;
 }
@@ -1262,10 +1218,6 @@ select {
 .border-blue-400 {
   --tw-border-opacity: 1;
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
-}
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -1483,6 +1435,9 @@ select {
 .pr-5 {
   padding-right: 1.25rem;
 }
+.pt-10 {
+  padding-top: 2.5rem;
+}
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -1515,9 +1470,6 @@ select {
 }
 .pl-0 {
   padding-left: 0px;
-}
-.pt-10 {
-  padding-top: 2.5rem;
 }
 .text-center {
   text-align: center;

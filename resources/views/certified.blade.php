@@ -8,7 +8,7 @@
     <div>
         {{-- <a href="#" class="absolute top-[-70px] left-0 text-[#013565]"><i class="fa-solid fa-chevron-left mr-3"></i>BACK</a> --}}
         <div class="w-fit h-fit absolute inset-0 m-auto md:px-0 px-8">
-            <img src="images/certification.png" alt="">
+            <img src="/images/certification.png" alt="">
         </div>
     </div>
 </section>

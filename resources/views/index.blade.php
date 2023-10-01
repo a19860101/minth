@@ -96,28 +96,14 @@
                 <div>Offer Best Service</div>
                 <div>Sustainability</div>
             </div>
-            <a href="/home" class="mx-auto mt-auto mb-24 text-2xl w-fit h-fit px-12 py-2 text-white rounded-full bg-black hover:text-black hover:bg-zinc-200 transition">Enter</a>
+            <div class="mx-auto mt-auto mb-24">
+
+                <a href="/home/zh_TW" class="text-2xl w-fit h-fit px-12 py-2 text-white rounded-full bg-black hover:text-black hover:bg-zinc-200 transition">中文</a>
+                <a href="/home/en" class="text-2xl w-fit h-fit px-12 py-2 text-white rounded-full bg-black hover:text-black hover:bg-zinc-200 transition">English</a>
+            </div>
 
         </div>
     </div>
-    {{-- <div class="bg-black/50 w-full h-screen text-white fixed"> --}}
-        {{-- <div class="w-[100px] space-y-4 p-4">
-            <img src="/images/ford.png" alt="" class="w-full">
-            <img src="/images/mitsubishi.png" alt="" class="w-full">
-            <img src="/images/toyota.png" alt="" class="w-full">
-            <img src="/images/honda.png" alt="" class="w-full">
-            <img src="/images/bmw.png" alt="" class="w-full">
-            <img src="/images/benz.png" alt="" class="w-full">
-            <img src="/images/landrover.png" alt="" class="w-full">
-            <img src="/images/lexus.png" alt="" class="w-full">
-            <img src="/images/vw.png" alt="" class="w-full">
-            <img src="/images/nissan.png" alt="" class="w-full">
-            <img src="/images/mazda.png" alt="" class="w-full">
-            <img src="/images/hyundai.png" alt="" class="w-full">
-            <img src="/images/subaru.png" alt="" class="w-full">
-        </div> --}}
-        
-    {{-- </div> --}}
     <script>
         let imgs = document.querySelectorAll('.slider-item');
         let total = imgs.length;

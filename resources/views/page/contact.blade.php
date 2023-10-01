@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="flex items-center mb-4">
-                <label for="" class="w-[100px] text-right pr-[10px]">{{__('opnion')}}</label>
+                <label for="" class="w-[100px] text-right pr-[10px]">{{__('comment')}}</label>
                 <div class="pl-4 flex-grow">
                     <textarea name="" id="" cols="30" rows="8" class="rounded-3xl w-full"></textarea>
                 </div>
@@ -55,10 +55,10 @@
         </form>
     </div>
     <div class="text-center text-sm bg-white mt-auto py-10 relative bottom-[56px]">
-        <div class="mb-4"><span class="text-[#3175B2]">Company</span> 7F., No. 53, Sec. 1, Nanchang Rd., Zhongzheng Dist., Taipei City  , Taiwan (R.O.C.) </div>
-        <div  class="mb-4"><span class="text-[#3175B2]">Factory</span> No. 5, Haiping Rd., Guishan Dist., Taoyuan City , Taiwan (R.O.C.)   </div>
-        <div><span class="text-[#3175B2]">Phone</span> 886-3-3298671   <span class="text-[#3175B2]">Fax</span> 886-3-3295839 </div>
-        <div>Business Unit:589     E-mail: sales@minth.com.tw </div>
+        <div class="mb-4"><span class="text-[#3175B2]">{{__('Company')}}</span> 7F., No. 53, Sec. 1, Nanchang Rd., Zhongzheng Dist., Taipei City  , Taiwan (R.O.C.) </div>
+        <div  class="mb-4"><span class="text-[#3175B2]">{{__('Factory')}}</span> No. 5, Haiping Rd., Guishan Dist., Taoyuan City , Taiwan (R.O.C.)   </div>
+        <div><span class="text-[#3175B2]">{{__('company_phone')}}</span> 886-3-3298671   <span class="text-[#3175B2]">{{__('company_fax')}}</span> 886-3-3295839 </div>
+        <div>{{__('BusinessUnit')}}     E-mail: sales@minth.com.tw </div>
     </div>
 </section>
 {{-- <div class="text-center py-10">

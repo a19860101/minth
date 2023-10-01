@@ -14,9 +14,24 @@
     "directions":"設備說明",
     "minth":"敏孚機器工業股份有限公司",
     "car_model":"應用車型",
-    "Test Equipment":"測試設備",
-    "Machine Equipment":"製造設備",
+    "test_equipment":"測試設備",
+    "machine_equipment":"製造設備",
     "public_time":"發佈時間",
-    "title":"標題"
+    "title":"標題",
+    "feature_equipment":"特色設備",
+    "name":"姓名",
+    "company_name":"公司名稱",
+    "company_phone":"電話號碼",
+    "company_fax":"傳真",
+    "company_address":"地址",
+    "email":"Email",
+    "comment":"備註",
+    "Company":"公司地址",
+    "Factory":"工廠地址",
+    "BusinessUnit":"業務部代表號:589",
+    "Door Belt Line Moulding":"內/外水切",
+    "Windshield Moulding":"前擋飾條",
+    "Roof Moulding":"車頂飾條",
+    "Major Product":"主要產品"
 
 }
