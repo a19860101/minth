@@ -714,8 +714,14 @@ select {
 .left-\[80\%\] {
   left: 80%;
 }
+.top-10 {
+  top: 2.5rem;
+}
 .left-\[-300px\] {
   left: -300px;
+}
+.top-8 {
+  top: 2rem;
 }
 .z-0 {
   z-index: 0;
@@ -1407,6 +1413,10 @@ select {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .pt-8 {
   padding-top: 2rem;

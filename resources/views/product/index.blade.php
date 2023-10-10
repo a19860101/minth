@@ -26,7 +26,7 @@
     <div class="bg-white/60 backdrop-blur-lg border border-[#3175B2] rounded-3xl h-fit w-fit p-20 shadow-md shadow-[#BFD7ED] w-[1000px]">
         {{-- <h2 class="text-4xl font-bold p-3">{{__($category->title_en)}}</h2> --}}
         @if(app()->getLocale() == 'zh_TW')
-        <h2 class="text-4xl font-bold p-3">{{$category->title == 'V-TYPE' ? 'Variable Extrusion Type' : $category->title}}</h2>
+        <h2 class="text-4xl font-bold p-3">{{$category->title == 'V-TYPE' ? '變截面類型' : $category->title}}</h2>
         @else
         <h2 class="text-4xl font-bold p-3">{{$category->title_en == 'V-TYPE' ? 'Variable Extrusion Type' : $category->title_en}}</h2>
 

@@ -58,7 +58,22 @@
             <span></span>
         </div>
         <nav class="h-screen bg-[#BFD7ED]  md:left-0 w-[300px] flex flex-col justify-between tracking-wider fixed z-50 overflow-y-scroll">
-        
+            <?php
+                $string = url()->full();
+                if(app()->getLocale() == 'en'){
+                    $result = Str::replace('zh_TW', 'en', $string);
+                }else{
+                    $result = Str::replace('en', 'zh_TW', $string);
+                }
+            ?>
+            <div class="mx-auto w-fit h-fit absolute top-8 inset-0">
+                @if(app()->getLocale() == 'en')
+                <a href="{{Str::replace('en', 'zh_TW', $string);}}" class="text-sm w-fit h-fit px-5 py-2 text-white rounded-full bg-black hover:text-black hover:bg-zinc-200 transition">中文</a>
+                @else
+                <a href="{{Str::replace('zh_TW', 'en', $string);}}" class="text-sm w-fit h-fit px-5 py-2 text-white rounded-full bg-black hover:text-black hover:bg-zinc-200 transition">English</a>
+                @endif
+
+            </div>
             <div class="text-center pt-20 pb-10">
                 <x-application-logo></x-application-logo>
                 <h1 class="mt-4">{{__('minth')}}</h1>
@@ -86,7 +101,7 @@
                     {{-- <li class="py-1"><a href="/equipment/test/{{app()->getLocale()}}" class="text-[#686868] hover:text-[#075ba8]">{{__('test_equipment')}}</a></li> --}}
                 </ul>
                 <div class="py-2"><a href="/certified/{{app()->getLocale()}}">{{__('certification')}}<i class="fa-solid fa-chevron-right pl-3 opacity-0"></i></a></div>
-                <div class="py-2"><a href="#" class="collapse-btn">{{__('news')}}</a></div>
+                {{-- <div class="py-2"><a href="#" class="collapse-btn">{{__('news')}}</a></div> --}}
                 <ul class="pl-3 hidden">
                     <li class="py-1"><a href="/news" class="text-[#686868] hover:text-[#075ba8]">{{__('news_list')}}</a></li>
                     {{-- <li class="py-1"><a href="#" class="text-[#686868] hover:text-[#075ba8]">消息本文</a></li> --}}
@@ -99,9 +114,6 @@
                     <li class="py-1"><a href="/join-us/{{app()->getLocale()}}" class="text-[#686868] hover:text-[#075ba8]">{{__('join_us')}}</a></li>
                 </ul>
                 <div class="py-2"><a href="/contact/{{app()->getLocale()}}">{{__('contact')}}<i class="fa-solid fa-chevron-right pl-3 opacity-0"></i></a></div>
-            </div>
-            <div>
-                <a href="#"></a>
             </div>
         </nav>
         <section class="absolute pl-0 md:pl-[300px] w-full">
