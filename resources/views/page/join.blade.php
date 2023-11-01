@@ -9,8 +9,9 @@
         <h1 class="text-5xl text-white text-center absolute m-auto inset-0 w-full h-full bg-black/50 leading-[200px]">{{__('join_us')}}</h1>
     </div>
     <div class="py-20 w-4/5 m-auto max-w-screen-md">
-        {{-- <h2 class="text-2xl text-center w-full top-0 left-0 text-[#013565] mb-10">{{__('join_us')}}</h2> --}}
-        {{-- <div class="text-center space-y-6 mb-12 text-lg leading-10">
+        <h2 class="text-2xl text-center w-full top-0 left-0 text-[#013565] mb-10">{{__('join_us')}}</h2>
+        @if(app()->getLocale()=='zh_TW')
+        <div class="text-center space-y-6 mb-12 text-lg leading-10">
             本公司的經營理念係以人和為基礎、公司永續經營共創公司利潤以期能達到客戶滿意、員工滿意、股東滿意的目標。<br>
             如果您追求的是一個可以永續經營的跨國企業；<br>
             如果您追求的是一個可以不斷自我成長的機會；<br>
@@ -39,7 +40,8 @@
                     </ol>
                 </div>
             </div>
-        </div> --}}
+        </div>
+        @else
         <div class="leading-8">
             The company's business philosophy is based on people and harmony, and the company's sustainable operation creates company profits in order to achieve the goals of customer satisfaction, employee satisfaction, and shareholder satisfaction.
             If you are pursuing a sustainable multinational enterprise;<br>
@@ -72,6 +74,7 @@
                 </div>
             </div>
         </div>
+        @endif
     </div>
 </section>
 @endsection

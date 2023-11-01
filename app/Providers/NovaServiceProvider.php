@@ -5,6 +5,12 @@ namespace App\Providers;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\Nova;
 use Laravel\Nova\NovaApplicationServiceProvider;
+use Illuminate\Http\Request;
+use Laravel\Nova\Dashboards\Main;
+// use Laravel\Nova\Menu\Menu;
+// use Laravel\Nova\Menu\MenuGroup;
+use Laravel\Nova\Menu\MenuItem;
+use Laravel\Nova\Menu\MenuSection;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -16,6 +22,21 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     public function boot()
     {
         parent::boot();
+        Nova::mainMenu(function (Request $request) {
+            return [
+                MenuSection::dashboard(Main::class)->icon('chart-bar'),
+                MenuSection::make('分類')->path('/resources/categories')->icon('cube'),
+                MenuSection::make('文章')->path('/resources/posts')->icon('cube'),
+                MenuSection::make('連結')->path('/resources/links')->icon('cube'),
+                MenuSection::make('使用者')->path('/resources/users')->icon('cube'),
+                // MenuSection::make('推薦管理', [
+                    // MenuItem::link('標題','/resources/link-titles'),
+                    // MenuItem::link('連結','/resources/links'),
+                // ])->icon('link')->collapsable(),
+                // MenuSection::make('拍攝需知')->path('/resources/notices')->icon('question-mark-circle'),
+
+            ];
+        });
     }
 
     /**

@@ -28,16 +28,16 @@
             <div class="text-right">-貢獻成果予與社會-</div>
         </div> --}}
         <div class="text-center space-y-6 mb-12 text-xl">
-            <div class="">Customer Satisfaction</div>
-            <div class="">Employee satisfaction</div>
-            <div class="">Shareholder satisfaction</div>
-            <div class="">Sustainable development</div>
-            <div class="">Give back to society</div>
+            <div class="">{{__('Customer Satisfaction')}}</div>
+            <div class="">{{__('Employee satisfaction')}}</div>
+            <div class="">{{__('Shareholder satisfaction')}}</div>
+            <div class="">{{__('Sustainable development')}}</div>
+            <div class="">{{__('Give back to society')}}</div>
         </div>
         <div class="space-y-6 w-1/2 mx-auto text-xl">
-            <div class="text-center">-Adhering to people and philosophy management-</div>
-            <div class="text-center">-Work together to create the future-</div>
-            <div class="text-center">-Contribute results to the society-</div>
+            <div class="text-center">-{{__('Adhering to people and philosophy management')}}-</div>
+            <div class="text-center">-{{__('Work together to create the future')}}-</div>
+            <div class="text-center">-{{__('Contribute results to the society')}}-</div>
         </div>
     </div>
 </section>
