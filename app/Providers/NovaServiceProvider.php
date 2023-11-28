@@ -24,7 +24,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         parent::boot();
         Nova::mainMenu(function (Request $request) {
             return [
-                MenuSection::dashboard(Main::class)->icon('chart-bar'),
+                // MenuSection::dashboard(Main::class)->icon('chart-bar'),
                 MenuSection::make('分類')->path('/resources/categories')->icon('cube'),
                 MenuSection::make('文章')->path('/resources/posts')->icon('cube'),
                 MenuSection::make('連結')->path('/resources/links')->icon('cube'),
