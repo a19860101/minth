@@ -6,47 +6,48 @@
 <section class="relative min-h-screen bg-center bg-no-repeat bg-cover main flex flex-col" style="background-image:url('/images/bg.png')">
     <div class="bg-white/50 border border-[#3175B2] rounded-xl h-fit max-w-screen-md w-11/12 p-10 mx-auto mb-10 mt-16">
         <h2 class="text-2xl text-center w-full top-0 left-0 text-[#013565] mb-4">{{__('contact')}}</h2>
-        <form action="">
+        <form action="" method="post">
+            @csrf
             <div class="flex items-center mb-4">
                 <label for="" class="w-[100px] text-right pr-[10px]">{{__('name')}}</label>
                 <div class="pl-4 flex-grow">
-                    <input type="text" placeholder="" class="rounded-full w-full p-1">
+                    <input type="text" name="name" placeholder="" class="rounded-full w-full p-1">
                 </div>
             </div>
             <div class="flex items-center mb-4">
                 <label for="" class="w-[100px] text-right pr-[10px]">{{__('company_name')}}</label>
                 <div class="pl-4 flex-grow">
-                    <input type="text" placeholder="" class="rounded-full w-full p-1">
+                    <input type="text" name="company_name" placeholder="" class="rounded-full w-full p-1">
                 </div>
             </div>
             <div class="flex items-center mb-4">
                 <label for="" class="w-[100px] text-right pr-[10px]">{{__('company_phone')}}</label>
                 <div class="pl-4 flex-grow">
-                    <input type="text" placeholder="" class="rounded-full w-full p-1">
+                    <input type="text" name="company_phone" placeholder="" class="rounded-full w-full p-1">
                 </div>
             </div>
             <div class="flex items-center mb-4">
                 <label for="" class="w-[100px] text-right pr-[10px]">{{__('company_fax')}}</label>
                 <div class="pl-4 flex-grow">
-                    <input type="text" placeholder="" class="rounded-full w-full p-1">
+                    <input type="text" name="company_fax" placeholder="" class="rounded-full w-full p-1">
                 </div>
             </div>
             <div class="flex items-center mb-4">
                 <label for="" class="w-[100px] text-right pr-[10px]">{{__('company_address')}}</label>
                 <div class="pl-4 flex-grow">
-                    <input type="text" placeholder="" class="rounded-full w-full p-1">
+                    <input type="text" name="company_address" placeholder="" class="rounded-full w-full p-1">
                 </div>
             </div>
             <div class="flex items-center mb-4">
                 <label for="" class="w-[100px] text-right pr-[10px]">{{__('email')}}</label>
                 <div class="pl-4 flex-grow">
-                    <input type="text" placeholder="" class="rounded-full w-full p-1">
+                    <input type="email" name="email" placeholder="" class="rounded-full w-full p-1">
                 </div>
             </div>
             <div class="flex items-center mb-4">
                 <label for="" class="w-[100px] text-right pr-[10px]">{{__('comment')}}</label>
                 <div class="pl-4 flex-grow">
-                    <textarea name="" id="" cols="30" rows="8" class="rounded-3xl w-full"></textarea>
+                    <textarea name="comment" id="" cols="30" rows="8" class="rounded-3xl w-full"></textarea>
                 </div>
             </div>
             <div class="text-right">

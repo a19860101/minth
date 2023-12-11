@@ -28,6 +28,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                 MenuSection::make('分類')->path('/resources/categories')->icon('cube'),
                 MenuSection::make('文章')->path('/resources/posts')->icon('cube'),
                 MenuSection::make('連結')->path('/resources/links')->icon('cube'),
+                MenuSection::make('表單')->path('/resources/contacts')->icon('cube'),
                 MenuSection::make('使用者')->path('/resources/users')->icon('cube'),
                 // MenuSection::make('推薦管理', [
                     // MenuItem::link('標題','/resources/link-titles'),

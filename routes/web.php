@@ -18,6 +18,7 @@ use App\Http\Controllers\LinkController;
 Route::get('/test',function(){
     return view('equipment.test');
 });
+// Route::resource('/contact',ContactController::class);
 Route::get('/', function () {
     return view('index');
 });
@@ -113,3 +114,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('/artisan/nova',function(){
+    Artisan::call('optimize:clear');
+});
