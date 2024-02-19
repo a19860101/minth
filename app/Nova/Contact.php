@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Contact extends Resource
@@ -41,9 +42,19 @@ class Contact extends Resource
     {
         return [
             ID::make()->sortable(),
+            Text::make('姓名','name')->rules('required'),
+            Text::make('公司名稱','company_name')->rules('required'),
+            Text::make('電話號碼','company_phone'),
+            Text::make('傳真','company_fax'),
+            Text::make('地址','company_address'),
+            Text::make('Email','email')->rules('required'),
+            Text::make('內文','comment')->rules('required')->onlyOnDetail(),
         ];
     }
-
+    public static function authorizedToCreate(Request $request)
+    {
+        return false;
+    }
     /**
      * Get the cards available for the request.
      *

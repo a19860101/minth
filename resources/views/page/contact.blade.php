@@ -6,7 +6,7 @@
 <section class="relative min-h-screen bg-center bg-no-repeat bg-cover main flex flex-col" style="background-image:url('/images/bg.png')">
     <div class="bg-white/50 border border-[#3175B2] rounded-xl h-fit max-w-screen-md w-11/12 p-10 mx-auto mb-10 mt-16">
         <h2 class="text-2xl text-center w-full top-0 left-0 text-[#013565] mb-4">{{__('contact')}}</h2>
-        <form action="" method="post">
+        <form action="/contact" method="post">
             @csrf
             <div class="flex items-center mb-4">
                 <label for="" class="w-[100px] text-right pr-[10px]">{{__('name')}}</label>

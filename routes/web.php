@@ -5,6 +5,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LinkController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -106,6 +107,10 @@ Route::get('/contact/{lang}',function($lang){
     }
     return view('page.contact');
 });
+Route::post('/contact',[ContactController::class,'store'])->name('contact');
+// Route::post('/contact',function(){
+//     return 'controller test';
+// });
 Route::get('/news',[PostController::class,'index']);
 Route::get('/news/{id}',[PostController::class,'show']);
 Route::get('/links',[LinkController::class,'index']);

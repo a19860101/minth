@@ -36,8 +36,20 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         //
+        // return 'test';
+        $request->validate([
+            'name'=> 'required',
+            'company_name'=> 'required',
+            'company_phone'=> 'required',
+            //'company_fax'=> 'required',
+            //'company_address'=> 'required',
+            'email'=> 'required',
+            'comment'=> 'required'
+        ]);
+        $lang = app()->getLocale();
         Contact::create($request->all());
-        return redirect()->route('/contact');
+        
+        return redirect('/contact/'.$lang);
     }
 
     /**
