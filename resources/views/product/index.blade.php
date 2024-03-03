@@ -22,8 +22,9 @@
 </style>
 @endsection
 @section('main')
-<section class="relative min-h-screen bg-center bg-no-repeat bg-cover bg-fixed main flex justify-center items-center pb-20" style="background-image:url('/images/feature-2.jpg')">
-    <div class="bg-white/60 backdrop-blur-lg border border-[#3175B2] rounded-3xl h-fit w-fit p-20 shadow-md shadow-[#BFD7ED] w-[1000px]">
+<section class="relative min-h-screen bg-center bg-no-repeat bg-cover bg-fixed main flex justify-center items-center" style="background-image:url('/images/feature-2.jpg')">
+    <div class="bg-white/60 backdrop-blur-lg inset-0 m-auto fixed z-10"></div>
+    <div class="h-fit w-fit p-20 relative">
         {{-- <h2 class="text-4xl font-bold p-3">{{__($category->title_en)}}</h2> --}}
         @if(app()->getLocale() == 'zh_TW')
         <h2 class="text-4xl font-bold p-3">{{$category->title == 'V-TYPE' ? '變截面類型' : $category->title}}</h2>

@@ -28,8 +28,9 @@
     }
     @keyframes flash{
         to {
-            opacity: .2;
+            opacity: .5;
             transform: scale(1.2);
+            background: yellow;
         }
     }
 </style>
@@ -46,7 +47,7 @@
             <div class="flex flex-col w-[250px]  space-y-4">
                 <a href="/product/{{app()->getLocale()}}/6" class="btn" data-target="#belt">{{__('Door Belt Line Moulding')}}</a>
                 {{-- <a href="/product/7" class="btn" data-target="#vtype">V-Type</a> --}}
-                <a href="#" class="btn v flex justify-between items-center" data-target="#vtype">{{__('Windshield Moulding')}}<i class="fa-solid fa-chevron-down duration-500"></i></a>
+                <a href="#" class="btn v flex justify-between items-center" data-target="#vtype2">{{__('Windshield Moulding')}}<i class="fa-solid fa-chevron-down duration-500"></i></a>
                 <div class="flex flex-col space-y-4 hidden vo">
                     <a href="/product/{{app()->getLocale()}}/7" class="btn block" data-target="#vtype">{{__('Variable Extrusion Type')}}</a>
                     <a href="/product/{{app()->getLocale()}}/4" class="btn block" data-target="#wind">{{__('Normal Type/Bottom Moulding')}}</a>
@@ -69,7 +70,13 @@
         // let ta = $('.btns').data('target');
         $('.btn').hover(function(){
             let ta = $(this).data('target');
-            $(ta).toggleClass('active');
+            console.log(ta);
+            if(ta === '#vtype2'){
+                $('#wind').toggleClass('active');
+                $('#vtype').toggleClass('active');
+            }else{
+                $(ta).toggleClass('active');
+            }
         });
         $('.v').click(function(){
             $(this).find('i').toggleClass('v-active');

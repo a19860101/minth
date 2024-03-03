@@ -118,7 +118,7 @@
         </nav>
         <section class="absolute pl-0 md:pl-[300px] w-full">
             @yield('main')
-            <footer class="w-full bg-[#d9d9d9] text-center py-4 mt-[-56px] relative">
+            <footer class="w-full bg-[#d9d9d9] text-center py-4 mt-[-56px] fixed">
                 Copyright&copy;2022敏孚機器工業 All rights reserved
             </footer>
         </section>
