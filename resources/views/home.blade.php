@@ -50,7 +50,8 @@
                 <a href="#" class="btn v flex justify-between items-center" data-target="#vtype2">{{__('Windshield Moulding')}}<i class="fa-solid fa-chevron-down duration-500"></i></a>
                 <div class="flex flex-col space-y-4 hidden vo">
                     <a href="/product/{{app()->getLocale()}}/7" class="btn block" data-target="#vtype">{{__('Variable Extrusion Type')}}</a>
-                    <a href="/product/{{app()->getLocale()}}/4" class="btn block" data-target="#wind">{{__('Normal Type/Bottom Moulding')}}</a>
+                    <a href="/product/{{app()->getLocale()}}/4" class="btn block" data-target="#wind">{{__('Normal Type')}}</a>
+                    <a href="/product/{{app()->getLocale()}}/9" class="btn block" data-target="#wind2">{{__('Bottom Moulding')}}</a>
                 </div>
                 <a href="/product/{{app()->getLocale()}}/2" class="btn" data-target="#roof">{{__('Roof Moulding')}}</a>
             </div>
